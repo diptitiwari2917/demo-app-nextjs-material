@@ -1,0 +1,374 @@
+.createWorkBookContainer {
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  @media (max-width: 600px) {
+    margin: 50px 0;
+  }
+  .titleMain {
+    font-weight: 700;
+    line-height: 60px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    @media (max-width: 767px) {
+      font-size: 35px;
+      line-height: 45px;
+    }
+    @media (max-width: 600px) {
+      font-size: 25px;
+      line-height: 35px;
+    }
+  }
+  .parentsImg {
+    margin: 40px 0;
+  }
+  .enterEmailSection {
+    max-width: 450px;
+    width: 100%;
+    .emailInput {
+      width: 100%;
+    }
+  }
+  .noticeSec {
+    color: #5a5a5a;
+    background-color: #f5f6f7;
+    border-radius: 4px;
+    width: auto;
+    max-width: 450px;
+    margin-bottom: 0;
+    padding: 12px 16px;
+    line-height: 20px;
+    margin-top: 20px;
+    p {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+  .siblingContainer {
+    background-color: #f5f7f7;
+    border-radius: 9px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    display: flex;
+    overflow: hidden;
+    margin: 100px 0;
+    padding: 20px;
+    @media (max-width:700px){
+        margin: 50px 0;
+    }
+    .siblingParagraph {
+      margin-top: 10px;
+      font-size: 24px;
+      font-weight: 700;
+      max-width: 250px;
+      width: 100%;
+      text-align: center;
+    }
+    .radioButtonContainer {
+      margin-top: 20px;
+      padding: 20px;
+      .radioLabel {
+        margin: 0;
+        align-items: start;
+        span {
+          &:first-child {
+            padding: 5px;
+          }
+        }
+        span {
+          &:last-child {
+            font-size: 14px;
+            margin-left: 2px;
+            transform: translateY(3px);
+          }
+        }
+      }
+    }
+    .addAnotheButton {
+      color: #2d6cd9;
+      text-align: center;
+      cursor: auto;
+      margin-top: 20px;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      text-transform: unset;
+    }
+    .additionalContent {
+      display: flex;
+      flex-direction: column;
+      padding: 15px 20px;
+      margin-left: 30px;
+      gap: 10px;
+      input {
+        background-color: white;
+      }
+      .formContent {
+        display: flex;
+        gap: 10px;
+      }
+      .siblingParagraphs {
+        color: #5a5a5a;
+        letter-spacing: -0.27px;
+        background-color: #0000;
+        max-width: 270px;
+        height: 99px;
+        margin-top: 0;
+        font-size: 12px;
+        line-height: 16px;
+        display: block;
+        overflow: hidden;
+      }
+    }
+  }
+  .childsInfoContainer {
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+    display: flex;
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+    @media (max-width:700px){
+        padding-top: 50px;
+    }
+    .childParagraph {
+      text-align: center;
+      background-color: #0000;
+      border-radius: 0;
+      font-size: 32px;
+      font-weight: 700;
+    }
+    .formContainer {
+      width: 100%;
+      .formContent {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+        display: flex;
+        gap: 15px;
+        .inputFields {
+          width: 100%;
+        }
+      }
+    }
+    .childFooterParagraph {
+      color: #636363;
+      letter-spacing: -0.18px;
+      margin-top: 12px;
+      padding-left: 12px;
+      font-size: 11px;
+    }
+  }
+  .uperlayer {
+    z-index: 99;
+    background-color: #ffffffcf;
+    display: block;
+    position: absolute;
+    inset: 0%;
+  }
+  .shippingWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .shippingInnerWrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 400px;
+
+      .shippingTitle {
+        font-size: 32px;
+        font-weight: bold;
+      }
+
+      .shippingSubTitle {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        max-width: 400px;
+      }
+
+      .inputWrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .detailWrap {
+          width: 100%;
+          max-width: 445px;
+          border: 2px solid #3663c6;
+          padding: 10px;
+          border-radius: 4px;
+
+          .detailSubTitle {
+            margin: 0;
+            font-size: 10px;
+          }
+
+          .priceWrap {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .detailTitle {
+              font-weight: bold;
+            }
+          }
+        }
+
+        .inputField {
+          width: 100%;
+          max-width: 445px;
+        }
+
+        .stateInputField {
+          max-width: 108px;
+
+          @media (max-width: 500px) {
+            width: 100%;
+            max-width: 100%;
+          }
+        }
+
+        .zipCodeInputField {
+          width: 100%;
+          max-width: 328px;
+
+          @media (max-width: 500px) {
+            width: 100%;
+            max-width: 100%;
+          }
+        }
+
+        .stateDeatilWrap {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          gap: 10px;
+        }
+      }
+    }
+  }
+  .selectCoverMain {
+    padding-top: 100px;
+    max-width: 570px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    @media (max-width:700px){
+        padding-top: 50px;
+    }
+    .childParagraph {
+      text-align: center;
+      background-color: #0000;
+      border-radius: 0;
+      font-size: 32px;
+      font-weight: 700;
+    }
+    .covers {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 20px;
+      @media (max-width:600px){
+          grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width:400px){
+          grid-template-columns: repeat(1, 1fr);
+      }
+      .cover {
+        cursor: pointer;
+        border: 3px solid #ccc;
+        border-radius: 4px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 16px 12px;
+        display: flex;
+        color: #000;
+        h5 {
+          letter-spacing: -0.36px;
+          font-weight: 700;
+          font-size: 14px;
+        }
+        span{
+            font-size: 12px;
+        }
+        h3{
+            margin-top: 20px;
+            font-size: 40px;
+            font-weight: 700;
+        }
+        p{
+            text-align: center;
+            letter-spacing: -.36px;
+            margin-top: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            font-size: 14px;
+        }
+      }
+    }
+  }
+  .selectGenderContainer {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    @media (max-width:700px){
+        padding-top: 50px;
+    }
+    .selectGenderParagraph {
+      text-align: center;
+      background-color: #0000;
+      border-radius: 0;
+      font-size: 32px;
+      font-weight: 700;
+      display: block;
+    }
+    .siblingImageOne{
+        height: 100%;
+        width: 100%;
+    }
+    .imageContainer {
+      display: flex;
+      gap: 10px;
+      @media (max-width:420px){
+          flex-direction: column;
+      }
+      .imageContent {
+          cursor: pointer;
+          border: 3px solid #ccc;
+          border-radius: 4px;
+          justify-content: center;
+          align-items: center;
+          margin-top: 0;
+          padding: 8px;
+          display: flex;
+          height: 180px;
+          width: 180px;
+          @media (max-width:420px){
+              height: 280px;
+              width: 280px;
+          }
+        }
+    }
+  }
+}
